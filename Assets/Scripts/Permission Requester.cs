@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Android;
 
-using 
-
 [Flags]
 public enum PermissionType : Int32
 {
