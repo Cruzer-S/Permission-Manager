@@ -4,7 +4,7 @@ using UnityEngine;
 
 using TMPro;
 
-public class GameManager : MonoBehaviour
+public class PermissionSceneExample : MonoBehaviour
 {
     [SerializeField] private TMP_Text result;
 
