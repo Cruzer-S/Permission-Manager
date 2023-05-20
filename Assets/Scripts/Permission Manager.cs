@@ -40,13 +40,8 @@ public class PermissionManager : MonoBehaviour
     {
         bool done = false;
 
-        new PermissionRequester(types).Request(
-            (result) => {
-                done = true;
-            }
-        );
+        new PermissionRequester(types).Request((result) => done = true);
 
-        while ( !done )
-            yield return new WaitForEndOfFrame();
+        yield return new WaitUntil(() => done);
     }
 }
